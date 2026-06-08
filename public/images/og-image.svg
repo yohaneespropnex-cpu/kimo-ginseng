@@ -1,0 +1,22 @@
+<!-- PLACEHOLDER OG IMAGE — [GANTI] dengan gambar share asli (disarankan 1200x630 JPG/PNG) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6c878"/>
+      <stop offset="0.5" stop-color="#c9a24b"/>
+      <stop offset="1" stop-color="#a07d2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#c9a24b" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#0b0a08" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0a08"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(600 230)">
+    <path d="M-3 45A33 33 0 0 1 -9 -15C18 -21 24 -24 33 -42c4 9 8 18 8 33 0 27-24 54-47 54Z" fill="url(#g)"/>
+  </g>
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="76" font-weight="700" fill="#f3e9d2">Kimo <tspan fill="#c9a24b">Ginseng</tspan></text>
+  <text x="600" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" fill="#cdc3ad">Ginseng Merah Korea &amp; Ashwagandha</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#c9a24b" letter-spacing="3">SUPLEMEN HERBAL PREMIUM · BPOM · HALAL</text>
+</svg>

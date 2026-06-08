@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset agar anchor tidak tertutup navbar sticky */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-ink text-cream font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-cream;
+  }
+
+  /* Fokus keyboard yang terlihat jelas (aksesibilitas) */
+  :focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-ink rounded;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Tombol utama (emas) */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           bg-gold-gradient px-7 py-3.5 text-sm font-semibold tracking-wide
+           text-ink shadow-gold transition-all duration-300
+           hover:-translate-y-0.5 hover:shadow-gold hover:brightness-110
+           active:translate-y-0;
+  }
+
+  /* Tombol garis (outline emas) */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           border border-gold/50 px-7 py-3.5 text-sm font-semibold
+           tracking-wide text-cream transition-all duration-300
+           hover:border-gold hover:bg-gold/10 hover:-translate-y-0.5;
+  }
+
+  .section {
+    @apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Garis pemisah emas tipis */
+  .gold-rule {
+    @apply h-px w-16 bg-gold-gradient;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase
+           tracking-[0.25em] text-gold;
+  }
+}
+
+/* Hormati preferensi pengurangan gerak */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
