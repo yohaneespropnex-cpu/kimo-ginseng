@@ -90,9 +90,9 @@ export default function Hero() {
               className="absolute inset-0 -z-10 m-auto h-72 w-72 rounded-full bg-gold/20 blur-3xl sm:h-80 sm:w-80"
             />
             <div className="relative rounded-[2rem] border border-gold/20 bg-gradient-to-b from-ink-700 to-ink-800 p-6 shadow-gold">
-              {/* [GANTI] Ganti file ini dengan foto produk asli Kimo Ginseng */}
+              {/* Foto produk (AI-generated). [GANTI] dengan foto produk asli bila sudah ada */}
               <img
-                src="./images/product.svg"
+                src="./images/product.jpg"
                 alt="Kemasan produk Kimo Ginseng — suplemen herbal Ginseng Merah Korea dan Ashwagandha"
                 width={520}
                 height={620}

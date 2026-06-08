@@ -59,8 +59,8 @@ export const INGREDIENTS: Ingredient[] = [
   {
     name: 'Ginseng Merah Korea',
     origin: 'Korea Selatan',
-    // [GANTI] dengan foto asli ginseng merah korea
-    image: './images/ginseng.svg',
+    // Foto AI-generated. [GANTI] dengan foto asli ginseng merah korea bila ada
+    image: './images/ginseng.jpg',
     desc: 'Akar ginseng merah yang melalui proses pemanasan khusus, dikenal selama berabad-abad sebagai tonik vitalitas. Kaya akan ginsenosida yang mendukung energi dan stamina pria.',
     points: [
       'Mendukung energi & stamina',
@@ -71,8 +71,8 @@ export const INGREDIENTS: Ingredient[] = [
   {
     name: 'Ashwagandha',
     origin: 'India',
-    // [GANTI] dengan foto asli ashwagandha
-    image: './images/ashwagandha.svg',
+    // Foto AI-generated. [GANTI] dengan foto asli ashwagandha bila ada
+    image: './images/ashwagandha.jpg',
     desc: 'Herbal adaptogen ternama dalam tradisi Ayurveda. Ashwagandha membantu tubuh mengelola stres, menjaga ketenangan, serta mendukung keseimbangan hormon dan vitalitas.',
     points: [
       'Adaptogen pengelola stres',
