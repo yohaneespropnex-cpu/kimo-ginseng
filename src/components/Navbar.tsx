@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { waLink } from '../config/site'
-import BrandMark from './BrandMark'
+import Wordmark from './Wordmark'
 import Icon from './Icon'
 
 const NAV_LINKS = [
@@ -41,14 +41,8 @@ export default function Navbar() {
     >
       <nav className="section flex h-16 items-center justify-between sm:h-20">
         {/* Logo */}
-        <a
-          href="#beranda"
-          className="flex items-center gap-2.5 font-serif text-xl font-semibold tracking-wide text-cream sm:text-2xl"
-        >
-          <BrandMark className="h-9 w-9 shadow-gold-sm" />
-          <span>
-            Kimo <span className="text-gold">Men</span>
-          </span>
+        <a href="#beranda" aria-label="Kimo Men — beranda">
+          <Wordmark textClass="text-lg sm:text-xl" />
         </a>
 
         {/* Menu desktop */}

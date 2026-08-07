@@ -1,5 +1,5 @@
 import { HEALTH_DISCLAIMER, SITE, waLink } from '../config/site'
-import BrandMark from './BrandMark'
+import Wordmark from './Wordmark'
 import Icon from './Icon'
 
 const NAV = [
@@ -17,12 +17,8 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr]">
           {/* Brand */}
           <div>
-            <a
-              href="#beranda"
-              className="flex items-center gap-2.5 font-serif text-xl font-semibold text-cream"
-            >
-              <BrandMark className="h-9 w-9" />
-              Kimo <span className="text-gold">Men</span>
+            <a href="#beranda" aria-label="Kimo Men — beranda">
+              <Wordmark textClass="text-lg" />
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream-dim">
               Suplemen herbal premium dari Ginseng Merah Korea &amp; Ashwagandha

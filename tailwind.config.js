@@ -31,6 +31,8 @@ export default {
         // Serif untuk judul, sans-serif untuk body
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        // Wordmark maskulin (kondensat, tegas)
+        wordmark: ['Oswald', 'Inter', 'sans-serif'],
       },
       boxShadow: {
         // Tinted setback — bayangan warm mineral, bukan hitam netral (impeccable: material-led depth)
