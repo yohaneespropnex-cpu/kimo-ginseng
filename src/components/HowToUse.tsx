@@ -16,7 +16,7 @@ export default function HowToUse() {
         <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step, i) => (
             <Reveal as="li" key={step.number} delay={i * 80}>
-              <div className="relative h-full rounded-2xl border border-gold/15 bg-ink-700/40 p-7 transition-colors duration-300 hover:border-gold/40">
+              <div className="relative h-full rounded-card border border-gold/15 bg-ink-700/40 p-7 transition-colors duration-300 hover:border-gold/40">
                 <span className="font-serif text-5xl font-semibold text-gold/30">
                   {String(step.number).padStart(2, '0')}
                 </span>

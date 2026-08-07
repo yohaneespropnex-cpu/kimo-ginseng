@@ -18,6 +18,18 @@
     overflow-x: hidden;
   }
 
+  /* Grain overlay halus — pecahkan kesan flat/steril (taste: surface upgrade) */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
   ::selection {
     @apply bg-gold/30 text-cream;
   }
@@ -40,7 +52,7 @@
            bg-gold-gradient px-7 py-3.5 text-sm font-semibold tracking-wide
            text-ink shadow-gold transition-all duration-300
            hover:-translate-y-0.5 hover:shadow-gold hover:brightness-110
-           active:translate-y-0;
+           active:translate-y-0 active:scale-[0.98];
   }
 
   /* Tombol garis (outline emas) */
@@ -48,7 +60,19 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full
            border border-gold/50 px-7 py-3.5 text-sm font-semibold
            tracking-wide text-cream transition-all duration-300
-           hover:border-gold hover:bg-gold/10 hover:-translate-y-0.5;
+           hover:border-gold hover:bg-gold/10 hover:-translate-y-0.5
+           active:translate-y-0 active:scale-[0.98];
+  }
+
+  /* Garis rambut (hairline) — pemisah presisi, material-led */
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-gold/25 to-transparent;
+  }
+
+  /* Eyebrow varian patina — untuk section berselang, tie-in herbal */
+  .eyebrow-patina {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase
+           tracking-[0.25em] text-patina;
   }
 
   .section {

@@ -11,6 +11,7 @@ export default function Ingredients() {
     >
       <div className="section">
         <SectionHeading
+          accent="patina"
           eyebrow="Kandungan Premium"
           title="Dua Herbal Legendaris dalam Satu Formula"
           subtitle="Perpaduan kekuatan timur — Ginseng Merah Korea dan Ashwagandha India — yang dipilih dengan standar mutu tinggi."
@@ -31,9 +32,9 @@ export default function Ingredients() {
                   <div className="relative mx-auto max-w-md">
                     <div
                       aria-hidden="true"
-                      className="absolute inset-0 -z-10 m-auto h-60 w-60 rounded-full bg-gold/15 blur-3xl"
+                      className="absolute inset-0 -z-10 m-auto h-60 w-60 rounded-full bg-patina/15 blur-3xl"
                     />
-                    <div className="overflow-hidden rounded-3xl border border-gold/20 bg-ink-700 shadow-gold-sm">
+                    <div className="overflow-hidden rounded-card border border-gold/20 bg-ink-700 shadow-gold-sm">
                       {/* [GANTI] Ganti dengan foto asli bahan ini */}
                       <img
                         src={ing.image}
@@ -62,7 +63,7 @@ export default function Ingredients() {
                         key={point}
                         className="flex items-center gap-3 text-sm text-cream"
                       >
-                        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
+                        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-patina/15 text-patina-light ring-1 ring-patina/25">
                           <Icon name="check" className="h-3.5 w-3.5" />
                         </span>
                         {point}

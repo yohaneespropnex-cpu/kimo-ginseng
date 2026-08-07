@@ -16,7 +16,7 @@ export default function Benefits() {
         <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {BENEFITS.map((benefit, i) => (
             <Reveal as="li" key={benefit.title} delay={i * 70}>
-              <article className="group h-full rounded-2xl border border-gold/15 bg-ink-700/40 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:bg-ink-700/70 hover:shadow-gold-sm">
+              <article className="group h-full rounded-card border border-gold/15 bg-ink-700/40 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:bg-ink-700/70 hover:shadow-gold-sm">
                 <span className="grid h-12 w-12 place-items-center rounded-xl bg-gold/10 text-gold transition-colors duration-300 group-hover:bg-gold-gradient group-hover:text-ink">
                   <Icon name={benefit.icon as never} className="h-6 w-6" />
                 </span>

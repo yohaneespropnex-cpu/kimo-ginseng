@@ -23,7 +23,7 @@ export default function FAQ() {
               <Reveal key={item.q} delay={i * 50}>
                 <div
                   className={[
-                    'overflow-hidden rounded-2xl border bg-ink-700/40 transition-colors duration-300',
+                    'overflow-hidden rounded-card border bg-ink-700/40 transition-colors duration-300',
                     isOpen ? 'border-gold/40' : 'border-gold/15',
                   ].join(' ')}
                 >

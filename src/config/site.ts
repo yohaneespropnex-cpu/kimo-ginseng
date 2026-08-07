@@ -13,7 +13,7 @@ export const WHATSAPP_NUMBER = '6281234567890'
 
 /** Pesan default yang otomatis terisi saat pelanggan klik tombol WhatsApp. */
 export const WHATSAPP_DEFAULT_MESSAGE =
-  'Halo Kimo, saya tertarik dengan produk Kimo Ginseng. Boleh info pemesanannya?'
+  'Halo Kimo, saya tertarik dengan produk Kimo Men. Boleh info pemesanannya?'
 
 /** Helper untuk membangun link wa.me lengkap. */
 export function waLink(message: string = WHATSAPP_DEFAULT_MESSAGE): string {
@@ -22,7 +22,7 @@ export function waLink(message: string = WHATSAPP_DEFAULT_MESSAGE): string {
 
 /** Identitas brand & kontak. [GANTI sesuai kebutuhan] */
 export const SITE = {
-  brand: 'Kimo Ginseng',
+  brand: 'Kimo Men',
   company: 'Kimo Suplemen',
   tagline: 'Vitalitas & Stamina Pria, Diracik dari Alam',
   email: 'halo@kimosuplemen.com', // [GANTI]

@@ -163,8 +163,8 @@ export interface FAQItem {
 
 export const FAQS: FAQItem[] = [
   {
-    q: 'Apakah Kimo Ginseng aman dikonsumsi?',
-    a: 'Kimo Ginseng adalah suplemen herbal yang terdaftar BPOM dan bersertifikat Halal MUI, ISO, GMP, serta HACCP. Meski demikian, ini adalah suplemen — bukan obat. Konsultasikan dengan tenaga kesehatan terlebih dahulu, terutama bila Anda memiliki kondisi medis tertentu.',
+    q: 'Apakah Kimo Men aman dikonsumsi?',
+    a: 'Kimo Men adalah suplemen herbal yang terdaftar BPOM dan bersertifikat Halal MUI, ISO, GMP, serta HACCP. Meski demikian, ini adalah suplemen — bukan obat. Konsultasikan dengan tenaga kesehatan terlebih dahulu, terutama bila Anda memiliki kondisi medis tertentu.',
   },
   {
     q: 'Bagaimana cara konsumsi yang benar?',
@@ -180,6 +180,6 @@ export const FAQS: FAQItem[] = [
   },
   {
     q: 'Apakah produk ini hanya untuk dewasa?',
-    a: 'Ya. Kimo Ginseng diperuntukkan khusus bagi pria dewasa berusia 18 tahun ke atas.',
+    a: 'Ya. Kimo Men diperuntukkan khusus bagi pria dewasa berusia 18 tahun ke atas.',
   },
 ]

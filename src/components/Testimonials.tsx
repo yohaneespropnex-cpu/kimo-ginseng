@@ -16,7 +16,7 @@ export default function Testimonials() {
         <ul className="mt-14 grid gap-6 md:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
             <Reveal as="li" key={t.name} delay={i * 90}>
-              <figure className="flex h-full flex-col rounded-2xl border border-gold/15 bg-ink-700/40 p-7 transition-colors duration-300 hover:border-gold/40">
+              <figure className="flex h-full flex-col rounded-card border border-gold/15 bg-ink-700/40 p-7 transition-colors duration-300 hover:border-gold/40">
                 <div className="flex text-gold" aria-label="Penilaian 5 dari 5 bintang">
                   {Array.from({ length: 5 }).map((_, s) => (
                     <Icon

@@ -8,10 +8,14 @@ export default function Hero() {
       id="beranda"
       className="relative overflow-hidden bg-radial-glow pt-28 sm:pt-32 lg:pt-40"
     >
-      {/* Ornamen latar lembut */}
+      {/* Ornamen latar lembut — gold hangat + secangkir patina herbal */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-24 right-0 h-96 w-96 rounded-full bg-gold/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 -left-24 h-80 w-80 rounded-full bg-patina/[0.07] blur-3xl"
       />
 
       <div className="section grid items-center gap-12 pb-20 lg:grid-cols-2 lg:gap-8 lg:pb-28">
@@ -35,7 +39,7 @@ export default function Hero() {
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-cream-dim sm:text-lg lg:mx-0">
-              Kimo Ginseng memadukan{' '}
+              Kimo Men memadukan{' '}
               <span className="text-cream">Ginseng Merah Korea</span> dan{' '}
               <span className="text-cream">Ashwagandha</span> pilihan untuk
               mendukung energi, performa, dan keharmonisan keluarga — dengan
@@ -63,7 +67,10 @@ export default function Hero() {
 
           {/* Badge kepercayaan */}
           <Reveal delay={320}>
-            <div className="mt-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 lg:justify-start">
+            <div className="mt-9 max-w-md">
+              <div className="hairline mx-auto lg:mx-0" />
+            </div>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 lg:justify-start">
               {[
                 { label: 'Terdaftar BPOM', icon: 'shield' as const },
                 { label: 'Halal MUI', icon: 'check' as const },
@@ -89,11 +96,11 @@ export default function Hero() {
               aria-hidden="true"
               className="absolute inset-0 -z-10 m-auto h-72 w-72 rounded-full bg-gold/20 blur-3xl sm:h-80 sm:w-80"
             />
-            <div className="relative rounded-[2rem] border border-gold/20 bg-gradient-to-b from-ink-700 to-ink-800 p-6 shadow-gold">
+            <div className="relative rounded-card border border-gold/20 bg-gradient-to-b from-ink-700 to-ink-800 p-6 shadow-gold">
               {/* Foto produk (AI-generated). [GANTI] dengan foto produk asli bila sudah ada */}
               <img
                 src="./images/product.jpg"
-                alt="Kemasan produk Kimo Ginseng — suplemen herbal Ginseng Merah Korea dan Ashwagandha"
+                alt="Kemasan produk Kimo Men — suplemen herbal Ginseng Merah Korea dan Ashwagandha"
                 width={520}
                 height={620}
                 className="mx-auto w-full animate-float drop-shadow-2xl"
@@ -101,7 +108,7 @@ export default function Hero() {
             </div>
 
             {/* Kartu rating mengambang */}
-            <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl border border-gold/20 bg-ink-700/90 px-4 py-3 shadow-gold-sm backdrop-blur sm:-left-6">
+            <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-card border border-gold/20 bg-ink-700/90 px-4 py-3 shadow-gold-sm backdrop-blur sm:-left-6">
               <div className="flex text-gold">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Icon

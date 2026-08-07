@@ -12,13 +12,13 @@ export default function Certifications() {
         <SectionHeading
           eyebrow="Legalitas & Mutu"
           title="Terjamin & Bersertifikat"
-          subtitle="Kimo Ginseng diproduksi dengan standar keamanan dan kualitas yang diakui."
+          subtitle="Kimo Men diproduksi dengan standar keamanan dan kualitas yang diakui."
         />
 
         <ul className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
           {CERTIFICATIONS.map((cert, i) => (
             <Reveal as="li" key={cert.label} delay={i * 70}>
-              <div className="group flex h-full flex-col items-center justify-center rounded-2xl border border-gold/15 bg-ink-700/40 px-4 py-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:shadow-gold-sm">
+              <div className="group flex h-full flex-col items-center justify-center rounded-card border border-gold/15 bg-ink-700/40 px-4 py-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:shadow-gold-sm">
                 {/* [GANTI] badge teks bisa diganti dengan logo resmi (img) bila tersedia */}
                 <span className="grid h-16 w-16 place-items-center rounded-full border border-gold/30 bg-ink font-serif text-lg font-bold tracking-wide text-gold transition-colors duration-300 group-hover:bg-gold-gradient group-hover:text-ink">
                   {cert.label}

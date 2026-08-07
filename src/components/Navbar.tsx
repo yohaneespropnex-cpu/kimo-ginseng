@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { waLink } from '../config/site'
+import BrandMark from './BrandMark'
 import Icon from './Icon'
 
 const NAV_LINKS = [
@@ -44,11 +45,9 @@ export default function Navbar() {
           href="#beranda"
           className="flex items-center gap-2.5 font-serif text-xl font-semibold tracking-wide text-cream sm:text-2xl"
         >
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-gold-gradient text-ink shadow-gold-sm">
-            <Icon name="leaf" className="h-5 w-5" />
-          </span>
+          <BrandMark className="h-9 w-9 shadow-gold-sm" />
           <span>
-            Kimo <span className="text-gold">Ginseng</span>
+            Kimo <span className="text-gold">Men</span>
           </span>
         </a>
 

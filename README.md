@@ -1,6 +1,6 @@
-# Kimo Ginseng — Landing Page
+# Kimo Men — Landing Page
 
-Landing page premium, modern, dan responsif untuk **Kimo Ginseng** — suplemen
+Landing page premium, modern, dan responsif untuk **Kimo Men** — suplemen
 herbal vitalitas & stamina pria dewasa (18+) dari **Kimo Suplemen**.
 
 Dibangun dengan **Vite + React + TypeScript + Tailwind CSS**. Ringan, cepat,
@@ -66,7 +66,7 @@ Semua data yang sering diganti ada di folder **`src/config/`**:
 
 Semua gambar saat ini berupa **placeholder SVG** di folder `public/images/`:
 
-- `product.svg` → foto produk Kimo Ginseng
+- `product.svg` → foto produk Kimo Men
 - `ginseng.svg` → foto Ginseng Merah Korea
 - `ashwagandha.svg` → foto Ashwagandha
 - `og-image.svg` → gambar share media sosial (disarankan 1200×630)
@@ -97,7 +97,7 @@ situs akan otomatis di-build dan dipublikasikan.
 # Di dalam folder proyek
 git init
 git add .
-git commit -m "Kimo Ginseng landing page"
+git commit -m "Kimo Men landing page"
 git branch -M main
 
 # Ganti URL berikut dengan repo GitHub kamu

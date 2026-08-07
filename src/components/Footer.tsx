@@ -1,4 +1,5 @@
 import { HEALTH_DISCLAIMER, SITE, waLink } from '../config/site'
+import BrandMark from './BrandMark'
 import Icon from './Icon'
 
 const NAV = [
@@ -20,10 +21,8 @@ export default function Footer() {
               href="#beranda"
               className="flex items-center gap-2.5 font-serif text-xl font-semibold text-cream"
             >
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-gold-gradient text-ink">
-                <Icon name="leaf" className="h-5 w-5" />
-              </span>
-              Kimo <span className="text-gold">Ginseng</span>
+              <BrandMark className="h-9 w-9" />
+              Kimo <span className="text-gold">Men</span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream-dim">
               Suplemen herbal premium dari Ginseng Merah Korea &amp; Ashwagandha
@@ -96,7 +95,7 @@ export default function Footer() {
         </div>
 
         {/* Disclaimer kesehatan */}
-        <div className="mt-12 rounded-2xl border border-gold/15 bg-ink-700/40 p-6">
+        <div className="mt-12 rounded-card border border-gold/15 bg-ink-700/40 p-6">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-gold">
             Disclaimer Kesehatan
           </h4>

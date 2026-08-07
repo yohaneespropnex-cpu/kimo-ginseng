@@ -7,7 +7,7 @@ export default function CTA() {
     <section id="pesan" className="relative py-20 sm:py-28">
       <div className="section">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl border border-gold/25 bg-gradient-to-br from-ink-700 via-ink-800 to-ink px-6 py-14 text-center shadow-gold sm:px-12 sm:py-20">
+          <div className="relative overflow-hidden rounded-card border border-gold/25 bg-gradient-to-br from-ink-700 via-ink-800 to-ink px-6 py-14 text-center shadow-gold sm:px-12 sm:py-20">
             {/* Cahaya dekoratif */}
             <div
               aria-hidden="true"
@@ -22,7 +22,7 @@ export default function CTA() {
               Investasikan pada Vitalitas &amp; Keharmonisan Anda
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-cream-dim sm:text-lg">
-              Pesan Kimo Ginseng langsung melalui WhatsApp. Tim kami siap
+              Pesan Kimo Men langsung melalui WhatsApp. Tim kami siap
               membantu Anda dengan ramah dan terpercaya.
             </p>
 
