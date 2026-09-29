@@ -41,7 +41,7 @@ export default function Navbar() {
     >
       <nav className="section flex h-16 items-center justify-between sm:h-20">
         {/* Logo */}
-        <a href="#beranda" aria-label="Kimo Men — beranda">
+        <a href="#beranda">
           <Wordmark textClass="text-lg sm:text-xl" />
         </a>
 

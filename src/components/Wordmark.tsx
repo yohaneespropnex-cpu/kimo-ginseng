@@ -38,7 +38,7 @@ export default function Wordmark({
       <span
         className={`font-wordmark font-semibold uppercase leading-none tracking-[0.14em] text-cream ${textClass}`}
       >
-        Kimo<span className="ml-[0.18em] text-gold">Men</span>
+        Kimo <span className="text-gold">Men</span>
       </span>
     </span>
   )

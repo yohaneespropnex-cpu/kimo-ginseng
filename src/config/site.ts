@@ -1,11 +1,27 @@
 /**
  * ============================================================================
- *  KONFIGURASI SITUS — KIMO GINSENG
+ *  KONFIGURASI SITUS — KIMO MEN
  * ============================================================================
  *  Semua data yang perlu kamu ganti ada di SATU file ini.
  *  Cari tanda [GANTI] dan sesuaikan dengan data bisnismu.
  * ============================================================================
  */
+
+/** URL publik situs (WAJIB diakhiri "/"). Dipakai untuk canonical, Open Graph,
+ *  sitemap, dan structured data. Ganti bila pindah ke custom domain. [GANTI] */
+export const SITE_URL = 'https://yohaneespropnex-cpu.github.io/kimo-ginseng/'
+
+/** Meta SEO utama. Judul ideal ≤ 60 karakter, deskripsi ≤ 155 karakter.
+ *  Hindari klaim berlebihan (mis. "tahan lama", "instan") — iklan suplemen
+ *  wajib objektif & sesuai klaim label yang disetujui BPOM. */
+export const SEO = {
+  title: 'Kimo Men — Suplemen Stamina Pria Herbal | Ginseng Merah Korea',
+  description:
+    'Kimo Men: suplemen herbal pria dari Ginseng Merah Korea & Ashwagandha untuk mendukung stamina dan vitalitas. Terdaftar BPOM, Halal MUI. Khusus 18+.',
+  ogImage: 'images/og-image.jpg', // relatif ke SITE_URL, 1200×630
+  ogImageAlt: 'Kimo Men — suplemen herbal pria, Ginseng Merah Korea & Ashwagandha',
+  locale: 'id_ID',
+} as const
 
 /** Nomor WhatsApp dalam format internasional TANPA tanda "+" atau spasi.
  *  Contoh: 6281234567890 (62 = kode Indonesia). [GANTI] */

@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr]">
           {/* Brand */}
           <div>
-            <a href="#beranda" aria-label="Kimo Men — beranda">
+            <a href="#beranda">
               <Wordmark textClass="text-lg" />
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream-dim">

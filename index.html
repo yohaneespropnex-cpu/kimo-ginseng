@@ -3,46 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="theme-color" content="#0b0a08" />
-
-    <!-- ====== SEO ====== -->
-    <title>Kimo Men — Suplemen Herbal Premium Vitalitas & Stamina Pria</title>
-    <meta
-      name="description"
-      content="Kimo Men: suplemen herbal premium dari Ginseng Merah Korea & Ashwagandha untuk stamina, vitalitas, dan performa pria dewasa. Terdaftar BPOM & Halal MUI."
-    />
-    <meta name="keywords" content="Kimo Men, suplemen herbal pria, ginseng merah korea, ashwagandha, stamina, vitalitas, BPOM, Halal MUI" />
     <meta name="author" content="Kimo Suplemen" />
-    <link rel="canonical" href="https://kimosuplemen.com/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <!--font-preload-->
 
-    <!-- ====== Open Graph ====== -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Kimo Suplemen" />
-    <meta property="og:title" content="Kimo Men — Suplemen Herbal Premium Vitalitas & Stamina Pria" />
-    <meta
-      property="og:description"
-      content="Perpaduan Ginseng Merah Korea & Ashwagandha untuk stamina, vitalitas, dan keharmonisan keluarga. Terdaftar BPOM & Halal MUI."
-    />
-    <meta property="og:image" content="./images/og-image.svg" />
-    <meta property="og:locale" content="id_ID" />
+    <!-- Blok ini DIGANTI otomatis saat build oleh scripts/prerender.mjs
+         (title, description, canonical, Open Graph, Twitter, JSON-LD) dari
+         src/config/site.ts. Isi di bawah hanya default untuk `npm run dev`. -->
+    <!--seo:start-->
+    <title>Kimo Men — Suplemen Stamina Pria Herbal</title>
+    <!--seo:end-->
 
-    <!-- ====== Twitter ====== -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kimo Men — Suplemen Herbal Premium Pria" />
-    <meta name="twitter:description" content="Ginseng Merah Korea & Ashwagandha untuk stamina & vitalitas. Terdaftar BPOM & Halal MUI." />
-    <meta name="twitter:image" content="./images/og-image.svg" />
-
-    <!-- ====== Fonts (efisien: preconnect + display swap) ====== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Tanpa JS: tampilkan konten yang biasanya muncul lewat animasi scroll -->
+    <noscript>
+      <style>
+        [data-reveal] { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app-html--></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

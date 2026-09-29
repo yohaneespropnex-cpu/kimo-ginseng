@@ -61,18 +61,51 @@ Semua data yang sering diganti ada di folder **`src/config/`**:
 1. `WHATSAPP_NUMBER` di `src/config/site.ts` — ganti `6281234567890` dengan nomor asli (format `62...`, tanpa `+` atau spasi).
 2. `SITE.email`, `SITE.legalName`, `SITE.address` di `src/config/site.ts`.
 3. Username Instagram sudah diisi `kimosuplemen` — ubah bila perlu.
+4. `SITE_URL` di `src/config/site.ts` — URL publik situs. **Wajib diganti** bila
+   pindah ke custom domain (dipakai canonical, Open Graph, sitemap, JSON-LD).
 
 ### Mengganti Gambar
 
-Semua gambar saat ini berupa **placeholder SVG** di folder `public/images/`:
+Foto ada di `public/images/` dalam dua bentuk: `.jpg` (fallback) dan varian
+WebP responsif (`-480.webp`, `-720.webp`, …) yang dipilih otomatis sesuai layar.
 
-- `product.svg` → foto produk Kimo Men
-- `ginseng.svg` → foto Ginseng Merah Korea
-- `ashwagandha.svg` → foto Ashwagandha
-- `og-image.svg` → gambar share media sosial (disarankan 1200×630)
+| File | Varian WebP yang dibutuhkan |
+|------|-----------------------------|
+| `product.jpg` (864×1184) | `product-480/720/864.webp` |
+| `ginseng.jpg`, `ashwagandha.jpg` (1184×864) | `-480.webp`, `-800.webp` |
+| `og-image.jpg` (1200×630) | — (gambar share WhatsApp/FB/X) |
 
-Ganti dengan foto asli (PNG/JPG). Jika nama/ekstensi file berbeda, sesuaikan
-path-nya di `src/config/content.ts` dan `src/components/Hero.tsx`.
+Setelah mengganti `.jpg`, buat ulang varian WebP (butuh Pillow):
+
+```bash
+cd public/images && python3 -c "
+from PIL import Image
+for n,ws in {'product':[480,720,864],'ginseng':[480,800],'ashwagandha':[480,800]}.items():
+    im=Image.open(n+'.jpg').convert('RGB')
+    for w in ws: im.resize((w,round(im.height*w/im.width)),Image.LANCZOS).save(f'{n}-{w}.webp','WEBP',quality=78,method=6)"
+```
+
+Jika dimensi foto baru berbeda, sesuaikan `width`/`height` di
+`src/components/Hero.tsx` dan `src/components/Ingredients.tsx`.
+
+---
+
+## 🔎 SEO & Performa
+
+- **Prerender (SSG):** `npm run build` merender halaman jadi HTML statis
+  (`src/entry-server.tsx` + `scripts/prerender.mjs`), jadi konten langsung
+  terbaca Google, scraper sosial, dan tampil sebelum JS jalan.
+- **Meta & structured data** otomatis dari `src/config/site.ts`: title,
+  description, canonical, Open Graph, Twitter Card, dan JSON-LD
+  (`Organization`, `WebSite`, `Product`, `FAQPage`).
+- **`sitemap.xml` & `robots.txt`** dibuat saat build dari `SITE_URL`.
+- **Font self-host** (`@fontsource`, subset latin) — tanpa request ke Google Fonts.
+- Skor Lighthouse (build lokal): mobile 98/100/100/100, desktop 100/100/100/100.
+
+Setelah live, daftarkan situs di **Google Search Console** dan submit
+`sitemap.xml`. Catatan: pada GitHub Pages *project site*, `robots.txt` di
+subfolder tidak dibaca crawler (hanya `robots.txt` di root domain) — sitemap
+tetap bisa disubmit manual lewat Search Console.
 
 ---
 

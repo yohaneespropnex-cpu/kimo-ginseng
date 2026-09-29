@@ -18,7 +18,7 @@ export default function FloatingWhatsApp() {
       href={waLink()}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Pesan via WhatsApp"
+      aria-label="Pesan Sekarang via WhatsApp"
       className={[
         'fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-gold-gradient px-4 py-3.5 text-ink shadow-gold transition-all duration-300',
         'hover:-translate-y-0.5 hover:brightness-110',

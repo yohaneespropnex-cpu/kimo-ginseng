@@ -17,7 +17,7 @@ export default function Testimonials() {
           {TESTIMONIALS.map((t, i) => (
             <Reveal as="li" key={t.name} delay={i * 90}>
               <figure className="flex h-full flex-col rounded-card border border-gold/15 bg-ink-700/40 p-7 transition-colors duration-300 hover:border-gold/40">
-                <div className="flex text-gold" aria-label="Penilaian 5 dari 5 bintang">
+                <div className="flex text-gold" role="img" aria-label="Penilaian 5 dari 5 bintang">
                   {Array.from({ length: 5 }).map((_, s) => (
                     <Icon
                       key={s}

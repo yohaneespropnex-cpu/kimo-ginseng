@@ -1,6 +1,7 @@
 import { INGREDIENTS } from '../config/content'
 import Icon from './Icon'
 import Reveal from './Reveal'
+import ResponsiveImage from './ResponsiveImage'
 import SectionHeading from './SectionHeading'
 
 export default function Ingredients() {
@@ -35,13 +36,14 @@ export default function Ingredients() {
                       className="absolute inset-0 -z-10 m-auto h-60 w-60 rounded-full bg-patina/15 blur-3xl"
                     />
                     <div className="overflow-hidden rounded-card border border-gold/20 bg-ink-700 shadow-gold-sm">
-                      {/* [GANTI] Ganti dengan foto asli bahan ini */}
-                      <img
-                        src={ing.image}
+                      {/* [GANTI] Ganti dengan foto asli bahan ini (+ varian -480/-800.webp) */}
+                      <ResponsiveImage
+                        base={ing.image.replace(/\.jpg$/, '')}
+                        widths={[480, 800]}
+                        width={1184}
+                        height={864}
+                        sizes="(min-width: 640px) 448px, calc(100vw - 40px)"
                         alt={`${ing.name} dari ${ing.origin}`}
-                        width={480}
-                        height={360}
-                        loading="lazy"
                         className="h-full w-full object-cover"
                       />
                     </div>
