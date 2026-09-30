@@ -22,8 +22,8 @@ export const BENEFITS: Benefit[] = [
   },
   {
     icon: 'flame',
-    title: 'Performa Lebih Tahan Lama',
-    desc: 'Bantu jaga vitalitas dan ketahanan untuk kualitas keintiman yang lebih baik.',
+    title: 'Vitalitas Tetap Terjaga',
+    desc: 'Membantu memelihara stamina dan vitalitas pria dewasa, mendukung keharmonisan bersama pasangan.',
   },
   {
     icon: 'leaf',
